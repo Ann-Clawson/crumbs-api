@@ -1,2 +1,0 @@
-class Cooky < ApplicationRecord
-end
