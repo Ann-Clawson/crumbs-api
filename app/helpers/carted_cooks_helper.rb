@@ -1,0 +1,2 @@
+module CartedCooksHelper
+end
