@@ -6,10 +6,10 @@ class CartedCooksController < ApplicationController
       status: params[:status],
       order_id: params[:order_id],
     )
-    if @customer.save
-      render json: { message: "Cook created successfully" }, status: :created
+    if @carted_cook.save
+      render json: { message: "Carted Cook created successfully" }, status: :created
     else
-      render json: { errors: @cook.errors.full_messages }, status: :bad_request
+      render json: { errors: @carted_cook.errors.full_messages }, status: :bad_request
     end
   end
 end
