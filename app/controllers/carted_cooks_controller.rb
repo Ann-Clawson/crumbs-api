@@ -3,7 +3,6 @@ class CartedCooksController < ApplicationController
     @carted_cook = CartedCook.new(
       customer_id: params[:customer_id],
       cook_id: params[:cook_id],
-      status: params[:status],
       order_id: params[:order_id],
     )
     if @carted_cook.save
